@@ -1,4 +1,4 @@
-module com.example.formatlas {
+module com.formatlas {
     requires javafx.controls;
     requires javafx.fxml;
 
@@ -8,6 +8,7 @@ module com.example.formatlas {
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
 
-    opens com.example.formatlas to javafx.fxml;
-    exports com.example.formatlas;
+    opens com.formatlas to javafx.fxml;
+    exports com.formatlas;
+    //opens com.formatlas.controller to javafx.fxml;
 }
