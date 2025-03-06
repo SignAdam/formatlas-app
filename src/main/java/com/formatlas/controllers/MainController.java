@@ -21,4 +21,12 @@ public class MainController {
         currentStage.show();
     }
 
+    public void inscriptionButton(ActionEvent event) throws IOException {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/inscription-view.fxml"));
+        Parent inscriptionView = loader.load();
+        Scene inscriptionScene = new Scene(inscriptionView);
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        currentStage.setScene(inscriptionScene);
+        currentStage.show();
+    }
 }

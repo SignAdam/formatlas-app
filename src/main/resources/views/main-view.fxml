@@ -54,8 +54,8 @@
                   </LinearGradient>
                </textFill>
             </Label>
-            <Button layoutX="78.0" layoutY="161.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="152.0" stylesheets="@../css/button.css" text="S'inscrire " />
-            <Button layoutX="359.0" layoutY="162.0" mnemonicParsing="false" onAction="#connexionButton" prefHeight="86.0" prefWidth="150.0" stylesheets="@../css/button.css" text="Se connecter" />
+            <Button layoutX="78.0" layoutY="161.0" mnemonicParsing="false" onAction="#inscriptionButton" prefHeight="91.0" prefWidth="152.0" stylesheets="@../css/button.css" text="Inscription" />
+            <Button layoutX="359.0" layoutY="162.0" mnemonicParsing="false" onAction="#connexionButton" prefHeight="86.0" prefWidth="150.0" stylesheets="@../css/button.css" text="Connexion" />
             <Label layoutX="227.0" layoutY="98.0" text="La formation de demain ! " />
          </children>
       </AnchorPane>
