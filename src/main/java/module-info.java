@@ -7,8 +7,9 @@ module com.formatlas {
     requires net.synedra.validatorfx;
     requires org.kordamp.ikonli.javafx;
     requires org.kordamp.bootstrapfx.core;
+    requires java.desktop;
 
     opens com.formatlas to javafx.fxml;
     exports com.formatlas;
-    //opens com.formatlas.controller to javafx.fxml;
+    opens com.formatlas.controllers to javafx.fxml;
 }

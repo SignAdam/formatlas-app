@@ -1,0 +1,23 @@
+/* Style général des boutons */
+.button {
+    -fx-background-color: linear-gradient(to right, #3DFB8B, #027A48);
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-font-weight: bold;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 25px;
+    -fx-background-radius: 25px;
+    -fx-cursor: hand;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0.5, 0, 2);
+    -fx-transition: all 0.3s ease-in-out;
+}
+
+.button:hover {
+    -fx-background-color: linear-gradient(to right, #027A48, #3DFB8B);
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 15, 0.7, 0, 4);
+}
+
+.button:pressed {
+    -fx-background-color: linear-gradient(to right, rgba(2, 122, 72, 0.5), rgba(61, 251, 139, 0.5));
+    -fx-translate-y: 2px;
+}

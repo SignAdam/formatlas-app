@@ -7,19 +7,30 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.paint.Color?>
 <?import javafx.scene.paint.LinearGradient?>
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
-   <center>
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.formatlas.controllers.MainController">
+   <top>
+      <HBox prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #027A48;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="44.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </top>
+   <right>
       <AnchorPane prefHeight="352.0" prefWidth="600.0" BorderPane.alignment="CENTER">
          <children>
-            <Label graphicTextGap="12.0" layoutX="207.0" prefHeight="55.0" prefWidth="186.0" text="FormAtlas">
+            <Label graphicTextGap="12.0" layoutX="141.0" layoutY="39.0" prefHeight="60.0" prefWidth="314.0" text="FormAtlas">
                <font>
-                  <Font name="Hiragino Sans W7" size="31.0" />
+                  <Font name="Hiragino Sans W7" size="52.0" />
                </font>
                <textFill>
                   <LinearGradient endX="1.0" endY="1.0">
@@ -43,20 +54,13 @@
                   </LinearGradient>
                </textFill>
             </Label>
-            <Button layoutX="82.0" layoutY="164.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="152.0" text="S'inscrire " />
-            <Button layoutX="362.0" layoutY="166.0" mnemonicParsing="false" prefHeight="86.0" prefWidth="150.0" text="Se connecter" />
+            <Button layoutX="78.0" layoutY="161.0" mnemonicParsing="false" prefHeight="91.0" prefWidth="152.0" stylesheets="@../css/button.css" text="S'inscrire " />
+            <Button layoutX="359.0" layoutY="162.0" mnemonicParsing="false" onAction="#connexionButton" prefHeight="86.0" prefWidth="150.0" stylesheets="@../css/button.css" text="Se connecter" />
+            <Label layoutX="227.0" layoutY="98.0" text="La formation de demain ! " />
          </children>
       </AnchorPane>
-   </center>
-   <top>
-      <HBox prefHeight="53.0" prefWidth="600.0" BorderPane.alignment="CENTER">
-         <children>
-            <ImageView fitHeight="52.0" fitWidth="54.0" pickOnBounds="true" preserveRatio="true">
-               <image>
-                  <Image url="@../images/logo.png" />
-               </image>
-            </ImageView>
-         </children>
-      </HBox>
-   </top>
+   </right>
+   <bottom>
+      <Pane prefHeight="40.0" prefWidth="600.0" style="-fx-background-color: #027A48;" BorderPane.alignment="CENTER" />
+   </bottom>
 </BorderPane>

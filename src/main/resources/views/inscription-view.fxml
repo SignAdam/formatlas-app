@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="626.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+   <center>
+      <AnchorPane prefHeight="544.0" prefWidth="684.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="188.0" layoutY="41.0" prefHeight="22.0" prefWidth="98.0" text="Nom" textFill="#027a48">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField layoutX="189.0" layoutY="63.0" prefHeight="45.0" prefWidth="285.0" style="-fx-border-color: #027A48;" />
+            <Label layoutX="181.0" layoutY="117.0" prefHeight="22.0" prefWidth="107.0" text="Prenom" textFill="#027a48">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField layoutX="182.0" layoutY="139.0" prefHeight="45.0" prefWidth="285.0" style="-fx-border-color: #027A48;" />
+            <Button layoutX="274.0" layoutY="499.0" mnemonicParsing="false" stylesheets="@../css/button.css" text="Se connecter" />
+            <Label layoutX="191.0" layoutY="210.0" prefHeight="22.0" prefWidth="107.0" text="Prenom" textFill="#027a48">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TextField layoutX="192.0" layoutY="232.0" prefHeight="45.0" prefWidth="285.0" style="-fx-border-color: #027A48;" />
+         </children>
+         <opaqueInsets>
+            <Insets top="2.0" />
+         </opaqueInsets>
+      </AnchorPane>
+   </center>
+   <top>
+      <Pane prefHeight="59.0" prefWidth="600.0" style="-fx-border-color: #D0D0D0;" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="268.0" layoutY="5.0" prefHeight="52.0" prefWidth="241.0" text="FORMATLAS">
+               <font>
+                  <Font name="American Typewriter Condensed Bold" size="30.0" />
+               </font>
+               <textFill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color red="0.239215686917305" green="0.9843137264251709" blue="0.545098066329956" />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="0.007843137718737125" green="0.47843137383461" blue="0.2823529541492462" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </textFill>
+            </Label>
+            <ImageView fitHeight="57.0" fitWidth="55.0" layoutX="6.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../images/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+         <opaqueInsets>
+            <Insets bottom="2.0" />
+         </opaqueInsets>
+      </Pane>
+   </top>
+</BorderPane>
