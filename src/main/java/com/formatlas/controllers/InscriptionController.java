@@ -9,8 +9,9 @@ import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.util.EventObject;
 
-public class ConnexionController {
+public class InscriptionController {
     @FXML
     private void retourAccueilButton(ActionEvent event) throws IOException {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/main-view.fxml"));

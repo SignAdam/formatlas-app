@@ -2,6 +2,7 @@
 
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
@@ -15,47 +16,50 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="735.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.formatlas.controllers.InscriptionController">
    <center>
       <AnchorPane prefHeight="544.0" prefWidth="684.0" BorderPane.alignment="CENTER">
          <children>
-            <Label layoutX="201.0" layoutY="43.0" prefHeight="22.0" prefWidth="98.0" text="Nom" textFill="#027a48">
+            <Label layoutX="201.0" layoutY="25.0" prefHeight="22.0" prefWidth="98.0" text="Nom" textFill="#027a48">
                <font>
                   <Font size="17.0" />
                </font>
             </Label>
-            <TextField layoutX="200.0" layoutY="65.0" prefHeight="45.0" prefWidth="285.0" promptText="John" style="-fx-border-color: #027A48;" />
-            <Label layoutX="200.0" layoutY="117.0" prefHeight="22.0" prefWidth="107.0" text="Prenom" textFill="#027a48">
+            <TextField layoutX="200.0" layoutY="47.0" prefHeight="45.0" prefWidth="285.0" promptText="John" style="-fx-border-color: #027A48;" />
+            <Label layoutX="200.0" layoutY="99.0" prefHeight="22.0" prefWidth="107.0" text="Prenom" textFill="#027a48">
                <font>
                   <Font size="17.0" />
                </font>
             </Label>
-            <TextField layoutX="200.0" layoutY="139.0" prefHeight="45.0" prefWidth="285.0" promptText="Doe" style="-fx-border-color: #027A48;" />
-            <Button layoutX="243.0" layoutY="554.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="199.0" stylesheets="@../css/button.css" text="S'inscrire" />
-            <Label layoutX="200.0" layoutY="195.0" prefHeight="22.0" prefWidth="107.0" text="Adresse mail" textFill="#027a48">
+            <TextField layoutX="200.0" layoutY="121.0" prefHeight="45.0" prefWidth="285.0" promptText="Doe" style="-fx-border-color: #027A48;" />
+            <Button layoutX="243.0" layoutY="565.0" mnemonicParsing="false" prefHeight="40.0" prefWidth="199.0" stylesheets="@../css/button.css" text="S'inscrire" />
+            <Label layoutX="200.0" layoutY="177.0" prefHeight="22.0" prefWidth="107.0" text="Adresse mail" textFill="#027a48">
                <font>
                   <Font size="17.0" />
                </font>
             </Label>
-            <TextField layoutX="200.0" layoutY="217.0" prefHeight="45.0" prefWidth="285.0" promptText="example@mail.com" style="-fx-border-color: #027A48;" />
-            <Label layoutX="201.0" layoutY="273.0" prefHeight="22.0" prefWidth="98.0" text="Mot de passe" textFill="#027a48">
+            <TextField layoutX="200.0" layoutY="199.0" prefHeight="45.0" prefWidth="285.0" promptText="example@mail.com" style="-fx-border-color: #027A48;" />
+            <Label layoutX="201.0" layoutY="255.0" prefHeight="22.0" prefWidth="98.0" text="Mot de passe" textFill="#027a48">
                <font>
                   <Font size="17.0" />
                </font>
             </Label>
-            <TextField layoutX="200.0" layoutY="295.0" prefHeight="45.0" prefWidth="285.0" promptText="••••••••••••••" style="-fx-border-color: #027A48;" />
-            <Label layoutX="200.0" layoutY="347.0" prefHeight="22.0" prefWidth="206.0" text="Repetez votre mot de passe" textFill="#027a48">
+            <TextField layoutX="200.0" layoutY="277.0" prefHeight="45.0" prefWidth="285.0" promptText="••••••••••••••" style="-fx-border-color: #027A48;" />
+            <Label layoutX="200.0" layoutY="329.0" prefHeight="22.0" prefWidth="206.0" text="Repetez votre mot de passe" textFill="#027a48">
                <font>
                   <Font size="17.0" />
                </font>
             </Label>
-            <TextField layoutX="200.0" layoutY="369.0" prefHeight="45.0" prefWidth="285.0" promptText="••••••••••••••" style="-fx-border-color: #027A48;" />
-            <Label layoutX="200.0" layoutY="425.0" prefHeight="22.0" prefWidth="149.0" text="Date de naissance " textFill="#027a48">
+            <TextField layoutX="200.0" layoutY="351.0" prefHeight="45.0" prefWidth="285.0" promptText="••••••••••••••" style="-fx-border-color: #027A48;" />
+            <Label layoutX="200.0" layoutY="407.0" prefHeight="22.0" prefWidth="149.0" text="Date de naissance " textFill="#027a48">
                <font>
                   <Font size="17.0" />
                </font>
             </Label>
-            <DatePicker layoutX="200.0" layoutY="457.0" prefHeight="46.0" prefWidth="285.0" promptText="JJ/MM/YYYY" />
+            <DatePicker layoutX="200.0" layoutY="439.0" prefHeight="46.0" prefWidth="285.0" promptText="JJ/MM/YYYY" />
+            <CheckBox layoutX="178.0" layoutY="504.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="340.0" text="J'ai lu et j'accepte les conditions d'utilisations FormAtlas*" />
+            <CheckBox layoutX="211.0" layoutY="530.0" mnemonicParsing="false" text="J'accepte de recevoir les newsletter par mail" />
+            <Button layoutX="13.0" layoutY="632.0" mnemonicParsing="false" onAction="#retourAccueilButton" prefHeight="30.0" prefWidth="141.0" text="&lt;&lt;&lt; Retour à l'acceuil" />
          </children>
          <opaqueInsets>
             <Insets top="2.0" />

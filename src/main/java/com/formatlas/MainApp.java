@@ -1,11 +1,14 @@
 package com.formatlas;
 
+import com.formatlas.dao.DBConnexion;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.stage.Stage;
 
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.SQLException;
 
 public class MainApp extends Application {
     @Override
@@ -16,7 +19,13 @@ public class MainApp extends Application {
         stage.setResizable(false); // Éviter le redimensionnement de la fenêtre
         stage.show();
     }
-    public static void main(String[] args) {
+    public static void main(String[] args) throws SQLException { //throws SQLException permet de catcher les erreurs SQL
         launch(); // Lance l'application
+        Connection conn = DBConnexion.getConnection();
+        if (conn != null) {
+            System.out.println("Connexion à la base de données réussie !");
+        } else {
+            System.out.println("Echec de la connexion à la base de données.");
+        }
     }
 }

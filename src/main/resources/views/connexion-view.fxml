@@ -14,8 +14,7 @@
 <?import javafx.scene.paint.Stop?>
 <?import javafx.scene.text.Font?>
 
-
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="684.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.formatlas.controllers.InscriptionController">
    <center>
       <AnchorPane prefHeight="341.0" prefWidth="708.0" BorderPane.alignment="CENTER">
          <children>
@@ -32,6 +31,7 @@
             </Label>
             <TextField layoutX="199.0" layoutY="175.0" prefHeight="45.0" prefWidth="285.0" style="-fx-border-color: #027A48;" />
             <Button layoutX="275.0" layoutY="251.0" mnemonicParsing="false" stylesheets="@../css/button.css" text="Se connecter" />
+            <Button layoutX="14.0" layoutY="301.0" mnemonicParsing="false" onAction="#retourAccueilButton" text="&lt;&lt;&lt; Retour à l'acceuil" />
          </children>
          <opaqueInsets>
             <Insets top="2.0" />

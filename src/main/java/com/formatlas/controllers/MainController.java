@@ -13,10 +13,10 @@ import java.io.IOException;
 public class MainController {
     @FXML
     private void connexionButton(ActionEvent event) throws IOException {
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/connexion-view.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/views/connexion-view.fxml")); // Chemin vers le fichier FXML
         Parent connexionView = loader.load();
         Scene connexionScene = new Scene(connexionView);
-        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow();
+        Stage currentStage = (Stage) ((Node) event.getSource()).getScene().getWindow(); // Récupérer la scène actuelle et la fenêtre actuelle. Stage est la fenêtre principale de l'application
         currentStage.setScene(connexionScene);
         currentStage.show();
     }
